@@ -148,3 +148,19 @@
         height: 60px;
     }
 }
+
+@media(max-width: 380px){
+    .orders-page{
+        width: calc(100% - 20px);
+    }
+    .orders-header h1{
+        font-size: 28px;
+    }
+    .order-card-top h2{
+        font-size: 18px;
+        word-break: break-word;
+    }
+    .order-total{
+        font-size: 18px;
+    }
+}

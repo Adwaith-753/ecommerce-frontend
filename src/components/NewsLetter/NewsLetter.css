@@ -1,6 +1,6 @@
 .newsletter{
     width: 65%;
-    height: 40vh;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,14 +22,14 @@
     font-size: 20px;
 }
 .newsletter div{
-display: flex;
-align-items: center;
-justify-content: space-between;
-background: white;
-width: 730px;
-height: 70px;
-border-radius: 80px;
-border: 1px solid #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 730px;
+    height: 70px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
 }
 .newsletter input{
     width: 500px;
@@ -39,6 +39,7 @@ border: 1px solid #e3e3e3;
     color: #616161;
     font-family: poppins;
     font-size: 16px;
+    outline: none;
 }
 .newsletter div button{
     width: 210px;
@@ -47,6 +48,7 @@ border: 1px solid #e3e3e3;
     background: black;
     color: white;
     cursor: pointer;
+    border: none;
 }
 
 @media(max-width: 900px){
@@ -71,6 +73,20 @@ border: 1px solid #e3e3e3;
     .newsletter div button{
         width: 130px;
         height: 58px;
+    }
+}
+
+@media(max-width: 380px){
+    .newsletter{
+        margin: 32px 12px 60px;
+        padding: 32px 14px;
+    }
+    .newsletter h1{
+        font-size: 28px;
+    }
+    .newsletter p{
+        font-size: 16px;
+        text-align: center;
     }
 }
 

@@ -32,6 +32,7 @@
 .productdisplay-main-img {
   width: 586px;
   height: 700px;
+  object-fit: cover;
 }
 
 .productdisplay-right {
@@ -174,6 +175,28 @@
   .productdisplay-right-sizes {
     gap: 10px;
     flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 420px){
+  .productdisplay-right h1 {
+    font-size: 24px;
+  }
+  .productdisplay-right-price {
+    gap: 18px;
+    font-size: 20px;
+    flex-wrap: wrap;
+  }
+  .productdisplay-right-sizes div {
+    flex: 1 1 64px;
+    text-align: center;
+    padding: 14px 12px;
+  }
+  .productdisplay-right button {
+    width: 100%;
+  }
+  .productdisplay-image-list img {
+    height: 72px;
   }
 }
 

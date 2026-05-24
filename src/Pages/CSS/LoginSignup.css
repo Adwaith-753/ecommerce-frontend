@@ -91,4 +91,18 @@
     .loginsignup-agree{
         font-size: 15px;
     }
+    .loginsignup-agree{
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+
+@media(max-width: 380px){
+    .loginsignup-container h1{
+        font-size: 28px;
+    }
+    .loginsignup-container{
+        width: calc(100% - 20px);
+        padding: 24px 14px;
+    }
 }

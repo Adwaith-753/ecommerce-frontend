@@ -1,6 +1,7 @@
 .navbar{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 16px;
     box-shadow: 0 1px 3px -2px black;
 }
@@ -13,6 +14,7 @@
     color: #171717;
     font-size: 38px;
     font-weight: 600;
+    white-space: nowrap;
 }
 .nav-menu{
     display: flex;
@@ -22,6 +24,7 @@
     color: #626262;
     font-size: 20px;
     font-weight: 500;
+    padding: 0;
 }
 .nav-menu li{
     display: flex;
@@ -43,6 +46,7 @@
     display: flex;
     align-items: center;
     gap: 45px;
+    position: relative;
 }
 .nav-login-cart button{
     width: 157px;
@@ -132,11 +136,36 @@
         justify-content: flex-start;
         gap: 18px;
         padding-bottom: 4px;
+        scrollbar-width: none;
+    }
+    .nav-menu::-webkit-scrollbar{
+        display: none;
     }
     .nav-login-cart{
         gap: 14px;
     }
     .nav-user span{
         display: none;
+    }
+}
+
+@media(max-width: 380px){
+    .navbar{
+        padding: 12px;
+    }
+    .nav-logo p{
+        font-size: 18px;
+    }
+    .nav-logo img{
+        width: 36px;
+    }
+    .nav-login-cart button,
+    .nav-user button{
+        width: 82px;
+        height: 38px;
+        font-size: 14px;
+    }
+    .nav-login-cart img{
+        width: 28px;
     }
 }

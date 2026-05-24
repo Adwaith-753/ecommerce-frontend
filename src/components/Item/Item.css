@@ -1,13 +1,17 @@
 .item{
     width: 100%;
     max-width: 359px;
+    min-width: 0;
 }
 .item img{
     width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
     display: block;
 }
 .item p{
     margin: 6px 0px;
+    line-height: 1.35;
 }
 .item-prices{
     display: flex;
@@ -27,4 +31,18 @@
 .item:hover{
     transform: scale(1.03);
     transition: 0.6s;
+}
+
+@media(max-width: 520px){
+    .item p{
+        font-size: 14px;
+    }
+    .item-prices{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .item-price-new,
+    .item-price-old{
+        font-size: 15px;
+    }
 }

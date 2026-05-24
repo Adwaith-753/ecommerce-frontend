@@ -73,3 +73,18 @@
         text-align: center;
     }
 }
+
+@media(max-width: 380px){
+    .footer-logo{
+        gap: 12px;
+    }
+    .footer-logo img{
+        width: 44px;
+    }
+    .footer-logo p{
+        font-size: 26px;
+    }
+    .footer-social-icon{
+        gap: 12px;
+    }
+}
