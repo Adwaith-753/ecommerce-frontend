@@ -1,8 +1,10 @@
 .descriptionbox{
-    margin: 120px 170px;
+    width: min(1180px, calc(100% - 80px));
+    margin: 100px auto;
 }
 .descriptionbox-navigator{
     display: flex;
+    flex-wrap: wrap;
 }
 .descriptionbox-nav-box{
     display: flex;
@@ -25,4 +27,36 @@
     border: 1px solid #d0d0d0;
     padding: 48px;
     padding-bottom: 70px;
+}
+
+@media(max-width: 760px){
+    .descriptionbox{
+        width: calc(100% - 32px);
+        margin: 60px auto;
+    }
+    .descriptionbox-nav-box{
+        flex: 1 1 150px;
+        height: 56px;
+        font-size: 14px;
+    }
+    .descriptionbox-description{
+        padding: 24px;
+        gap: 18px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+
+@media(max-width: 420px){
+    .descriptionbox{
+        width: calc(100% - 24px);
+        margin: 44px auto;
+    }
+    .descriptionbox-nav-box{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .descriptionbox-description{
+        padding: 18px;
+    }
 }

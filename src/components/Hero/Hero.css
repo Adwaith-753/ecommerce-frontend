@@ -1,5 +1,5 @@
 .hero{
-    height: 100vh;
+    min-height: 720px;
     background:linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
     display: flex;
 }
@@ -59,7 +59,6 @@
 
 @media(max-width: 900px){
     .hero{
-        height: auto;
         min-height: 70vh;
         flex-direction: column;
         padding: 50px 20px;

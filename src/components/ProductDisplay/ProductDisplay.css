@@ -5,13 +5,15 @@
   color: #5e5e5e;
   font-size: 16px;
   font-weight: 600;
-  margin: 60px 170px;
+  width: min(1180px, calc(100% - 80px));
+  margin: 60px auto;
   text-transform: capitalize;
 }
 
 .productdisplay {
   display: flex;
-  margin: 0px 170px;
+  width: min(1180px, calc(100% - 80px));
+  margin: 0px auto;
 }
 
 .productdisplay-left {
@@ -120,8 +122,7 @@
 @media(max-width: 1180px){
   .breadcrum,
   .productdisplay{
-    margin-left: 40px;
-    margin-right: 40px;
+    width: calc(100% - 80px);
   }
   .productdisplay-main-img {
     width: 430px;
@@ -138,13 +139,15 @@
 
 @media(max-width: 860px){
   .breadcrum{
-    margin: 30px 16px;
+    width: calc(100% - 32px);
+    margin: 30px auto;
     flex-wrap: wrap;
     font-size: 13px;
   }
   .productdisplay {
     flex-direction: column;
-    margin: 0px 16px;
+    width: calc(100% - 32px);
+    margin: 0px auto;
     gap: 28px;
   }
   .productdisplay-left {

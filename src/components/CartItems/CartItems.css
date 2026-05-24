@@ -1,5 +1,6 @@
 .cartitems{
-    margin: 100px 170px;
+    width: min(1180px, calc(100% - 80px));
+    margin: 100px auto;
 }
 
 .cartitems hr{
