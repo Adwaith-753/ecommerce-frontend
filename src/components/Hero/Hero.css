@@ -1,0 +1,96 @@
+.hero{
+    height: 100vh;
+    background:linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
+    display: flex;
+}
+.hero-left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+.hero-left h2{
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+}
+.hero-left p{
+    color: #171717;
+    font-size: 100px;
+    font-weight: 700;
+}
+.hand-hand-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hand-hand-icon img{
+    width: 105px;
+}
+.hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background:#ff4141;
+    color:white;
+    font-size: 22px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+
+}
+.hero-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-right img{
+    max-width: 100%;
+}
+
+@media(max-width: 900px){
+    .hero{
+        height: auto;
+        min-height: 70vh;
+        flex-direction: column;
+        padding: 50px 20px;
+        box-sizing: border-box;
+    }
+    .hero-left{
+        padding-left: 0;
+        align-items: flex-start;
+    }
+    .hero-left p{
+        font-size: 56px;
+    }
+    .hero-left h2{
+        font-size: 20px;
+    }
+    .hand-hand-icon img{
+        width: 64px;
+    }
+    .hero-latest-btn{
+        width: 240px;
+        height: 58px;
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 520px){
+    .hero-left p{
+        font-size: 40px;
+    }
+    .hero-right img{
+        max-height: 360px;
+        object-fit: contain;
+    }
+}
